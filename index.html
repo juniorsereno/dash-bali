@@ -46,41 +46,37 @@
                 <!-- Valor Total Gerado -->
                 <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-200 flex flex-col justify-between">
                     <h3 class="text-sm font-medium text-gray-500">Valor Total Gerado</h3>
-                    <p class="text-4xl font-bold text-green-600 mt-2">R$ 23.880,00</p>
+                    <p class="text-4xl font-bold text-green-600 mt-2">R$ 24.217,00</p>
                     <p class="text-xs text-gray-400 mt-2">Soma de todas as vendas realizadas pelo agente no período.</p>
                 </div>
                 
                 <!-- Total de Vendas -->
                 <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-200 flex flex-col justify-between">
                     <h3 class="text-sm font-medium text-gray-500">Total de Vendas</h3>
-                    <p class="text-4xl font-bold text-blue-600 mt-2">70</p>
+                    <p class="text-4xl font-bold text-blue-600 mt-2">71</p>
                      <p class="text-xs text-gray-400 mt-2">Número total de conversões concluídas com sucesso.</p>
                 </div>
 
                 <!-- Taxa de Conversão (Interações) -->
                 <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-200 flex flex-col justify-between">
                     <h3 class="text-sm font-medium text-gray-500">Taxa de Conversão</h3>
-                    <p class="text-4xl font-bold text-blue-600 mt-2">9,22%</p>
-                    <p class="text-xs text-gray-400 mt-2">Das 759 interações iniciadas, 70 resultaram em venda.</p>
+                    <p class="text-4xl font-bold text-blue-600 mt-2">9,29%</p>
+                    <p class="text-xs text-gray-400 mt-2">Das 764 interações, 71 resultaram em venda.</p>
                 </div>
                 
                 <!-- Ticket Médio -->
                 <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-200 flex flex-col justify-between">
                     <h3 class="text-sm font-medium text-gray-500">Ticket Médio</h3>
-                    <p class="text-4xl font-bold text-green-600 mt-2">R$ 341,14</p>
+                    <p class="text-4xl font-bold text-green-600 mt-2">R$ 341,08</p>
                     <p class="text-xs text-gray-400 mt-2">Valor médio por transação realizada pelo agente.</p>
                 </div>
             </div>
 
             <!-- Gráficos -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
+            <div class="grid grid-cols-1 gap-8 mt-8">
                 <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-200">
                     <h3 class="text-lg font-semibold text-gray-800 mb-4">Vendas e Faturamento por Dia</h3>
                     <canvas id="salesChart"></canvas>
-                </div>
-                <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-200">
-                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Origem e Engajamento dos Clientes</h3>
-                     <canvas id="engagementChart"></canvas>
                 </div>
             </div>
         </section>
@@ -90,56 +86,19 @@
             <h2 class="text-2xl font-bold text-gray-900 mb-6 border-l-4 border-gray-400 pl-4">Base de Dados Completa</h2>
             <p class="text-gray-600 mb-8">A seguir, apresentamos os dados detalhados que formam a base para a análise de desempenho. Esta seção oferece total transparência sobre os números de contatos, interações e vendas diárias.</p>
             
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <!-- Remarketing -->
-                <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-200">
-                    <h3 class="text-lg font-semibold mb-4 text-gray-800">Campanha de Remarketing</h3>
-                    <div class="table-container">
-                        <table class="min-w-full divide-y divide-gray-200">
-                            <thead class="bg-gray-50">
-                                <tr>
-                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Data</th>
-                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Disparos</th>
-                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Interações</th>
-                                </tr>
-                            </thead>
-                            <tbody class="bg-white divide-y divide-gray-200" id="remarketing-data">
-                                <!-- Dados inseridos via JS -->
-                            </tbody>
-                             <tfoot class="bg-gray-100 font-bold">
-                                <tr>
-                                    <td class="px-6 py-3 text-left text-sm">Total</td>
-                                    <td class="px-6 py-3 text-left text-sm">1679</td>
-                                    <td class="px-6 py-3 text-left text-sm">560</td>
-                                </tr>
-                            </tfoot>
-                        </table>
-                    </div>
-                </div>
-
+            <div class="grid grid-cols-1 gap-8">
                 <!-- Central de Atendimento -->
                 <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-200">
                     <h3 class="text-lg font-semibold mb-4 text-gray-800">Leads da Central</h3>
-                    <div class="table-container">
-                        <table class="min-w-full divide-y divide-gray-200">
-                            <thead class="bg-gray-50">
-                                <tr>
-                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Data</th>
-                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Recebidos</th>
-                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Interações</th>
-                                </tr>
-                            </thead>
-                            <tbody class="bg-white divide-y divide-gray-200" id="central-data">
-                                <!-- Dados inseridos via JS -->
-                            </tbody>
-                            <tfoot class="bg-gray-100 font-bold">
-                                <tr>
-                                    <td class="px-6 py-3 text-left text-sm">Total</td>
-                                    <td class="px-6 py-3 text-left text-sm">386</td>
-                                    <td class="px-6 py-3 text-left text-sm">199</td>
-                                </tr>
-                            </tfoot>
-                        </table>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-sm text-gray-500">Leads Atendidos</p>
+                            <p class="text-2xl font-bold">1428</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500">Leads que Interagiram</p>
+                            <p class="text-2xl font-bold">764</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -153,7 +112,6 @@
                             <tr>
                                 <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Data</th>
                                 <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Nº de Vendas</th>
-                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Atendimentos</th>
                                 <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Valor (R$)</th>
                             </tr>
                         </thead>
@@ -163,9 +121,8 @@
                         <tfoot class="bg-gray-100 font-bold">
                             <tr>
                                 <td class="px-6 py-3 text-left text-sm">Total</td>
-                                <td class="px-6 py-3 text-left text-sm">70</td>
-                                <td class="px-6 py-3 text-left text-sm" id="total-atendimentos">0</td>
-                                <td class="px-6 py-3 text-left text-sm">R$ 23.880,00</td>
+                                <td class="px-6 py-3 text-left text-sm">71</td>
+                                <td class="px-6 py-3 text-left text-sm">R$ 24.217,00</td>
                             </tr>
                         </tfoot>
                     </table>
@@ -177,33 +134,9 @@
 
     <script>
         // --- DADOS ---
-        const remarketingData = {
-            "2025-10-03": { sent: 30, interacted: 20 },
-            "2025-10-04": { sent: 16, interacted: 15 },
-            "2025-10-05": { sent: 16, interacted: 15 },
-            "2025-10-06": { sent: 156, interacted: 86 },
-            "2025-10-07": { sent: 70, interacted: 47 },
-            "2025-10-08": { sent: 692, interacted: 144 },
-            "2025-10-10": { sent: 5, interacted: 2 },
-            "2025-10-11": { sent: 552, interacted: 163 },
-            "2025-10-12": { sent: 14, interacted: 10 },
-            "2025-10-13": { sent: 96, interacted: 42 },
-            "2025-10-14": { sent: 32, interacted: 16 },
-        };
-
-        const centralData = {
-            "2025-10-03": { received: 11, interacted: 7 },
-            "2025-10-04": { received: 22, interacted: 9 },
-            "2025-10-05": { received: 26, interacted: 10 },
-            "2025-10-06": { received: 17, interacted: 11 },
-            "2025-10-07": { received: 16, interacted: 10 },
-            "2025-10-08": { received: 32, interacted: 23 },
-            "2025-10-09": { received: 44, interacted: 20 },
-            "2025-10-10": { received: 49, interacted: 29 },
-            "2025-10-11": { received: 83, interacted: 49 },
-            "2025-10-12": { received: 39, interacted: 14 },
-            "2025-10-13": { received: 31, interacted: 14 },
-            "2025-10-14": { received: 16, interacted: 3 },
+        const centralLeads = {
+            attended: 1428,
+            interacted: 764
         };
 
         const salesData = {
@@ -217,7 +150,7 @@
             "2025-10-11": { count: 14, value: 3873.00 },
             "2025-10-12": { count: 7, value: 1822.00 },
             "2025-10-13": { count: 3, value: 1099.00 },
-            "2025-10-14": { count: 4, value: 1506.00 },
+            "2025-10-14": { count: 5, value: 1843.00 }, // 4 vendas (1506) + 1 venda (337)
         };
         
         // --- FUNÇÃO PARA POPULAR TABELAS ---
@@ -236,30 +169,10 @@
         
         const formatCurrency = (value) => value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 
-        populateTable('remarketing-data', remarketingData, [{ key: 'sent' }, { key: 'interacted' }]);
-        populateTable('central-data', centralData, [{ key: 'received' }, { key: 'interacted' }]);
-        // --- Lógica para Tabela de Vendas com Atendimentos ---
-        const salesWithInteractions = {};
-        let totalInteractionsForSalesDays = 0;
-        for (const date in salesData) {
-            const remarketingInteractions = remarketingData[date]?.interacted || 0;
-            const centralInteractions = centralData[date]?.interacted || 0;
-            const totalDailyInteractions = remarketingInteractions + centralInteractions;
-            
-            salesWithInteractions[date] = {
-                ...salesData[date],
-                atendimentos: totalDailyInteractions
-            };
-            totalInteractionsForSalesDays += totalDailyInteractions;
-        }
-
-        populateTable('sales-data', salesWithInteractions, [
+        populateTable('sales-data', salesData, [
             { key: 'count' },
-            { key: 'atendimentos' },
             { key: 'value', formatter: formatCurrency }
         ]);
-        document.getElementById('total-atendimentos').textContent = totalInteractionsForSalesDays;
-
 
         // --- CONFIGURAÇÃO DOS GRÁFICOS ---
         document.addEventListener('DOMContentLoaded', () => {
@@ -311,79 +224,21 @@
                 }
             });
 
-            // Gráfico de Engajamento
-            const totalRemarketing = Object.values(remarketingData).reduce((sum, item) => sum + item.sent, 0);
-            const interactedRemarketing = Object.values(remarketingData).reduce((sum, item) => sum + item.interacted, 0);
-            const totalCentral = Object.values(centralData).reduce((sum, item) => sum + item.received, 0);
-            const interactedCentral = Object.values(centralData).reduce((sum, item) => sum + item.interacted, 0);
-
             // --- LÓGICA PARA ANÁLISE DE INSIGHTS ---
             const insightsContainer = document.getElementById('insights-content');
             if (insightsContainer) {
-                const remarketingRate = (interactedRemarketing / totalRemarketing * 100).toFixed(2);
-                const centralRate = (interactedCentral / totalCentral * 100).toFixed(2);
+                const centralRate = (centralLeads.interacted / centralLeads.attended * 100).toFixed(2);
 
                 let insightsHTML = `
-                    <p>A análise do engajamento dos clientes revela informações importantes sobre a eficácia de cada canal de comunicação. No período analisado, foram observados os seguintes resultados:</p>
+                    <p>A análise de engajamento da <strong>Central de Leads</strong> revela informações importantes sobre a eficácia da comunicação. No período analisado, foram observados os seguintes resultados:</p>
                     <ul class="list-disc list-inside space-y-2 pl-4">
-                        <li><strong>Campanha de Remarketing:</strong> De um total de <strong>${totalRemarketing}</strong> disparos, <strong>${interactedRemarketing}</strong> clientes interagiram, resultando em uma taxa de interação de <strong>${remarketingRate}%</strong>.</li>
-                        <li><strong>Leads da Central:</strong> Foram recebidos <strong>${totalCentral}</strong> leads, dos quais <strong>${interactedCentral}</strong> iniciaram uma interação, o que representa uma taxa de <strong>${centralRate}%</strong>.</li>
+                        <li>De um total de <strong>${centralLeads.attended}</strong> leads atendidos, <strong>${centralLeads.interacted}</strong> clientes interagiram, resultando em uma taxa de interação de <strong>${centralRate}%</strong>.</li>
                     </ul>
+                     <p class="mt-4 p-4 bg-purple-50 rounded-lg border border-purple-200"><strong>Conclusão:</strong> A taxa de interação da Central de Leads indica que os clientes que chegam por este canal estão propensos a interagir, sugerindo uma boa qualidade e intenção na origem dos leads.</p>
                 `;
-
-                if (remarketingRate > centralRate) {
-                    insightsHTML += `<p class="mt-4 p-4 bg-purple-50 rounded-lg border border-purple-200"><strong>Conclusão:</strong> A <strong>Campanha de Remarketing</strong> está se mostrando mais eficiente em termos de engajamento proporcional, com uma taxa de interação superior. Embora a Central de Atendimento gere um volume maior de interações totais, a estratégia de remarketing converte uma porcentagem maior de disparos em conversas ativas.</p>`;
-                } else if (centralRate > remarketingRate) {
-                    insightsHTML += `<p class="mt-4 p-4 bg-purple-50 rounded-lg border border-purple-200"><strong>Conclusão:</strong> Os <strong>Leads da Central</strong> apresentam uma maior taxa de engajamento. Isso sugere que os clientes que chegam por este canal estão mais propensos a interagir, indicando uma alta qualidade e intenção na origem dos leads.</p>`;
-                } else {
-                    insightsHTML += `<p class="mt-4 p-4 bg-purple-50 rounded-lg border border-purple-200"><strong>Conclusão:</strong> Ambos os canais apresentam taxas de engajamento muito similares, indicando uma eficácia equilibrada. A estratégia combinada se mostra robusta, com cada canal contribuindo de forma significativa para o volume total de interações.</p>`;
-                }
                 
                 insightsContainer.innerHTML = insightsHTML;
             }
-
-            new Chart(document.getElementById('engagementChart'), {
-                type: 'bar',
-                data: {
-                    labels: ['Remarketing', 'Leads da Central'],
-                    datasets: [
-                        {
-                            label: 'Interagiram',
-                            data: [interactedRemarketing, interactedCentral],
-                            backgroundColor: 'rgba(37, 99, 235, 0.8)',
-                        },
-                        {
-                            label: 'Não Interagiram',
-                            data: [
-                                totalRemarketing - interactedRemarketing,
-                                totalCentral - interactedCentral
-                            ],
-                            backgroundColor: 'rgba(37, 99, 235, 0.3)',
-                        }
-                    ]
-                },
-                options: {
-                    responsive: true,
-                    plugins: {
-                        legend: {
-                            position: 'top',
-                        },
-                        title: {
-                            display: false,
-                            text: 'Engajamento por Origem'
-                        }
-                    },
-                    scales: {
-                        x: {
-                            stacked: true,
-                        },
-                        y: {
-                            stacked: true
-                        }
-                    }
-                }
-            });
-
         });
     </script>
 </body>
